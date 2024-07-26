@@ -1,8 +1,7 @@
 <?php
 
 require_once 'includes/dbconnect.php';
-require_once 'CRUD/read.php';
-
+require_once 'CRUD/readAll.php';
 
 ?>
 
@@ -34,6 +33,18 @@ require_once 'CRUD/read.php';
                   </article>
             <?php endforeach; ?>
       </main>
+      
+<!-- Fonctionnalité à ajouter avec la DB -->
+
+      <!-- <?php foreach ($categories as $categorie) : ?>
+            <form action="">
+                  <select name="categories" id="categories">
+                        <option value="<?= $categorie['value']; ?>"></option>
+                        <option value="<?= $categorie['value']; ?>"></option>
+                        <option value="<?= $categorie['value']; ?>"></option>
+                  </select>
+            </form>
+      <?php endforeach; ?> -->
 
       <hr>
 
